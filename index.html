@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Tino Gomes — Desenvolvedor em Formação</title>
+  <link rel="icon" type="" href="./img/chapeu.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ===== NAV ===== -->
@@ -31,33 +33,23 @@
 
       <!-- Links desktop -->
       <ul class="nav__links" role="list">
-        <li><a href="#sobre"    class="nav__link">Sobre</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
         <li><a href="#projetos" class="nav__link">Projetos</a></li>
-        <li><a href="#contato"  class="nav__link">Contato</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
       </ul>
 
       <!-- Ações: tema + hamburger -->
       <div class="nav__actions">
 
         <!-- Toggle modo claro/escuro -->
-        <button
-          class="nav__theme-btn"
-          id="themeToggle"
-          aria-label="Alternar modo claro/escuro"
-          title="Alternar tema"
-        >
-          <span class="nav__theme-icon nav__theme-icon--dark"  aria-hidden="true">●</span>
+        <button class="nav__theme-btn" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <span class="nav__theme-icon nav__theme-icon--dark" aria-hidden="true">●</span>
           <span class="nav__theme-icon nav__theme-icon--light" aria-hidden="true">○</span>
         </button>
 
         <!-- Hamburger (mobile) -->
-        <button
-          class="nav__hamburger"
-          id="menuToggle"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-        >
+        <button class="nav__hamburger" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="mobileMenu">
           <span class="nav__bar"></span>
           <span class="nav__bar"></span>
           <span class="nav__bar"></span>
@@ -69,9 +61,9 @@
     <!-- Menu mobile (drawer) -->
     <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
       <ul class="nav__mobile-links" role="list">
-        <li><a href="#sobre"    class="nav__mobile-link">Sobre</a></li>
+        <li><a href="#sobre" class="nav__mobile-link">Sobre</a></li>
         <li><a href="#projetos" class="nav__mobile-link">Projetos</a></li>
-        <li><a href="#contato"  class="nav__mobile-link">Contato</a></li>
+        <li><a href="#contato" class="nav__mobile-link">Contato</a></li>
       </ul>
     </div>
   </header>
@@ -81,17 +73,8 @@
 
     <!-- Vídeo de apresentação em background (referência HungryMan) -->
     <div class="hero__video-wrap" aria-hidden="true">
-      <video
-        id="heroVideo"
-        class="hero__video"
-        src="videos/Noir video2.mp4"
-        autoplay
-        loop
-        muted
-        playsinline
-        preload="auto"
-        tabindex="-1"
-      >
+      <video id="heroVideo" class="hero__video" src="videos/Noir video2.mp4" autoplay loop muted playsinline
+        preload="auto" tabindex="-1">
         <source src="videos/Noir video2.mp4" type="video/mp4" />
         <source src="videos/Noir%20video2.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo HTML5.
@@ -132,23 +115,19 @@
     </div>
 
     <!-- Botão de mutar/desmutar som do vídeo -->
-    <button
-      id="heroMuteBtn"
-      class="hero__mute-btn"
-      type="button"
-      aria-label="Ativar som do vídeo"
-      title="Ativar som"
-      data-muted="true"
-    >
+    <button id="heroMuteBtn" class="hero__mute-btn" type="button" aria-label="Ativar som do vídeo" title="Ativar som"
+      data-muted="true">
       <span class="hero__mute-icon hero__mute-icon--muted" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
           <line x1="23" y1="9" x2="17" y2="15"></line>
           <line x1="17" y1="9" x2="23" y2="15"></line>
         </svg>
       </span>
       <span class="hero__mute-icon hero__mute-icon--unmuted" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
           <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
         </svg>
@@ -180,12 +159,8 @@
 
         <!-- FOTO do aluno -->
         <figure class="sobre__foto" data-animate="fade-up" style="--delay: 0.1s">
-          <img
-            src="img/Retrato Formal em Luz Sombria.png"
-            alt="Foto de Lucas Tino Gomes"
-            class="sobre__img"
-            onerror="this.src='foto.jpg'"
-          />
+          <img src="img/Retrato Formal em Luz Sombria.png" alt="Foto de Lucas Tino Gomes" class="sobre__img"
+            onerror="this.src='foto.jpg'" />
           <!-- Moldura decorativa vermelha -->
           <div class="sobre__foto-frame" aria-hidden="true"></div>
         </figure>
@@ -247,7 +222,8 @@
     </div>
 
     <!-- Filtros de categoria -->
-    <div class="projetos__filtros" data-animate="fade-up" style="--delay:0.1s" role="group" aria-label="Filtrar projetos">
+    <div class="projetos__filtros" data-animate="fade-up" style="--delay:0.1s" role="group"
+      aria-label="Filtrar projetos">
       <button class="projetos__filtro is-active" data-filter="todos">Todos</button>
       <button class="projetos__filtro" data-filter="web">Web</button>
       <button class="projetos__filtro" data-filter="ui">UI / Design</button>
@@ -259,11 +235,11 @@
 
       <!-- CARD 1 — BET-WARRIORS (Jogo Meme) -->
       <li class="proj-card" data-category="web" data-animate="fade-up" style="--delay:0.05s">
-        <a href="https://github.com/L-Developer10/BET" class="proj-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto BET-WARRIORS no GitHub">
+        <a href="https://github.com/L-Developer10/BET" class="proj-card__link" target="_blank" rel="noopener noreferrer"
+          aria-label="Ver projeto BET-WARRIORS no GitHub">
           <figure class="proj-card__img-wrap">
-            <img src="img/bet-warriors.png" alt="Logo do jogo meme BET-WARRIORS"
-                 class="proj-card__img"
-                 onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
+            <img src="img/bet-warriors.png" alt="Logo do jogo meme BET-WARRIORS" class="proj-card__img"
+              onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
             <!-- Overlay de hover -->
             <div class="proj-card__overlay" aria-hidden="true">
               <span class="proj-card__ver">Ver no GitHub →</span>
@@ -276,7 +252,9 @@
               <span class="proj-card__year">2026</span>
             </div>
             <h3 class="proj-card__title">BET-WARRIORS</h3>
-            <p class="proj-card__desc"><strong>Jogo meme satírico</strong> de apostas simuladas feito em HTML, CSS e JS puro. <em>Não é uma bet real e não envolve dinheiro de verdade (100% fictício)</em>. Contém 7 mini-jogos, metas dinâmicas e áudio sintetizado.</p>
+            <p class="proj-card__desc"><strong>Jogo meme satírico</strong> de apostas simuladas feito em HTML, CSS e JS
+              puro. <em>Não é uma bet real e não envolve dinheiro de verdade (100% fictício)</em>. Contém 7 mini-jogos,
+              metas dinâmicas e áudio sintetizado.</p>
           </div>
           <!-- Linha inferior vermelha animada -->
           <div class="proj-card__bar" aria-hidden="true"></div>
@@ -285,11 +263,11 @@
 
       <!-- CARD 2 — LÍNGUA: Relógio Tradutor (Fictício) -->
       <li class="proj-card proj-card--featured" data-category="web" data-animate="fade-up" style="--delay:0.12s">
-        <a href="https://github.com/Luks-hosh/ReTratudor" class="proj-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto LÍNGUA Relógio Tradutor no GitHub">
+        <a href="https://github.com/Luks-hosh/ReTratudor" class="proj-card__link" target="_blank"
+          rel="noopener noreferrer" aria-label="Ver projeto LÍNGUA Relógio Tradutor no GitHub">
           <figure class="proj-card__img-wrap">
             <img src="img/lingua-relogio.png" alt="Relógio Tradutor LÍNGUA — Traduz o mundo, conecta você"
-                 class="proj-card__img"
-                 onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
+              class="proj-card__img" onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
             <div class="proj-card__overlay" aria-hidden="true">
               <span class="proj-card__ver">Ver no GitHub →</span>
             </div>
@@ -301,7 +279,9 @@
               <span class="proj-card__year">2026</span>
             </div>
             <h3 class="proj-card__title">LÍNGUA — Relógio Tradutor</h3>
-            <p class="proj-card__desc">E-commerce conceitual de um smartwatch com tradução em tempo real de mais de 500 idiomas. Desenvolvido com HTML5, CSS3 responsivo e design focado na experiência de apresentação e compra de tecnologia futurista.</p>
+            <p class="proj-card__desc">E-commerce conceitual de um smartwatch com tradução em tempo real de mais de 500
+              idiomas. Desenvolvido com HTML5, CSS3 responsivo e design focado na experiência de apresentação e compra
+              de tecnologia futurista.</p>
           </div>
           <div class="proj-card__bar" aria-hidden="true"></div>
         </a>
@@ -309,11 +289,11 @@
 
       <!-- CARD 3 — TEBE: Consultoria em IA -->
       <li class="proj-card" data-category="ui" data-animate="fade-up" style="--delay:0.19s">
-        <a href="https://github.com/L-Developer10/TEBE" class="proj-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto TEBE Consultoria em IA no GitHub">
+        <a href="https://github.com/L-Developer10/TEBE" class="proj-card__link" target="_blank"
+          rel="noopener noreferrer" aria-label="Ver projeto TEBE Consultoria em IA no GitHub">
           <figure class="proj-card__img-wrap">
             <img src="img/tebe-ia.png" alt="Logo e identidade visual da TEBE — Consultoria em Inteligência Artificial"
-                 class="proj-card__img"
-                 onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
+              class="proj-card__img" onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
             <div class="proj-card__overlay" aria-hidden="true">
               <span class="proj-card__ver">Ver no GitHub →</span>
             </div>
@@ -324,7 +304,9 @@
               <span class="proj-card__year">2026</span>
             </div>
             <h3 class="proj-card__title">TEBE — Consultoria em IA</h3>
-            <p class="proj-card__desc">Site institucional e identidade tecnológica de alta fidelidade para consultoria em Inteligência Artificial. Conta com canvas dinâmico de rede neural interativa, arquitetura de soluções e design responsivo.</p>
+            <p class="proj-card__desc">Site institucional e identidade tecnológica de alta fidelidade para consultoria
+              em Inteligência Artificial. Conta com canvas dinâmico de rede neural interativa, arquitetura de soluções e
+              design responsivo.</p>
           </div>
           <div class="proj-card__bar" aria-hidden="true"></div>
         </a>
@@ -332,11 +314,12 @@
 
       <!-- CARD 4 — Game Library 3D -->
       <li class="proj-card" data-category="outros" data-animate="fade-up" style="--delay:0.26s">
-        <a href="https://github.com/Luks-hosh/biblioteca-3d" class="proj-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto Game Library 3D no GitHub">
+        <a href="https://github.com/Luks-hosh/biblioteca-3d" class="proj-card__link" target="_blank"
+          rel="noopener noreferrer" aria-label="Ver projeto Game Library 3D no GitHub">
           <figure class="proj-card__img-wrap">
-            <img src="img/biblioteca-3d.png" alt="Game Library 3D — Console futurista com mídias 3D e interface cyberpunk"
-                 class="proj-card__img"
-                 onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
+            <img src="img/biblioteca-3d.png"
+              alt="Game Library 3D — Console futurista com mídias 3D e interface cyberpunk" class="proj-card__img"
+              onerror="this.closest('figure').classList.add('proj-card__img-wrap--placeholder')">
             <div class="proj-card__overlay" aria-hidden="true">
               <span class="proj-card__ver">Ver no GitHub →</span>
             </div>
@@ -347,7 +330,9 @@
               <span class="proj-card__year">2026</span>
             </div>
             <h3 class="proj-card__title">Game Library 3D</h3>
-            <p class="proj-card__desc">Interface de console futurista e cyberpunk para catalogação e exploração de jogos em 3D. Conta com mídias holográficas rotativas, ambientação sonora imersiva e filtros de plataforma e gênero.</p>
+            <p class="proj-card__desc">Interface de console futurista e cyberpunk para catalogação e exploração de jogos
+              em 3D. Conta com mídias holográficas rotativas, ambientação sonora imersiva e filtros de plataforma e
+              gênero.</p>
           </div>
           <div class="proj-card__bar" aria-hidden="true"></div>
         </a>
@@ -382,13 +367,15 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/" target="_blank" rel="noopener" class="contato__social-link" aria-label="GitHub">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contato__social-link"
+              aria-label="GitHub">
               <span class="contato__social-icon" aria-hidden="true">⌥</span>
               GitHub
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contato__social-link" aria-label="LinkedIn">
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contato__social-link"
+              aria-label="LinkedIn">
               <span class="contato__social-icon" aria-hidden="true">in</span>
               LinkedIn
             </a>
@@ -397,58 +384,30 @@
       </div>
 
       <!-- Lado direito: formulário -->
-      <form
-        id="contactForm"
-        class="contato__form"
-        novalidate
-        data-animate="slide-left"
-        style="--delay:0.1s"
-        aria-label="Formulário de contato"
-      >
+      <form id="contactForm" class="contato__form" novalidate data-animate="slide-left" style="--delay:0.1s"
+        aria-label="Formulário de contato">
 
         <!-- Nome -->
         <div class="form-field">
           <label for="cf-nome" class="form-label">Nome</label>
-          <input
-            id="cf-nome"
-            name="nome"
-            type="text"
-            class="form-input"
-            placeholder="Seu nome completo"
-            autocomplete="name"
-            required
-            minlength="2"
-          />
+          <input id="cf-nome" name="nome" type="text" class="form-input" placeholder="Seu nome completo"
+            autocomplete="name" required minlength="2" />
           <span class="form-error" aria-live="polite"></span>
         </div>
 
         <!-- E-mail -->
         <div class="form-field">
           <label for="cf-email" class="form-label">E-mail</label>
-          <input
-            id="cf-email"
-            name="email"
-            type="email"
-            class="form-input"
-            placeholder="seu@email.com"
-            autocomplete="email"
-            required
-          />
+          <input id="cf-email" name="email" type="email" class="form-input" placeholder="seu@email.com"
+            autocomplete="email" required />
           <span class="form-error" aria-live="polite"></span>
         </div>
 
         <!-- Mensagem -->
         <div class="form-field">
           <label for="cf-msg" class="form-label">Mensagem</label>
-          <textarea
-            id="cf-msg"
-            name="mensagem"
-            class="form-input form-textarea"
-            placeholder="O que você tem em mente?"
-            rows="5"
-            required
-            minlength="10"
-          ></textarea>
+          <textarea id="cf-msg" name="mensagem" class="form-input form-textarea" placeholder="O que você tem em mente?"
+            rows="5" required minlength="10"></textarea>
           <span class="form-error" aria-live="polite"></span>
         </div>
 
@@ -480,4 +439,5 @@
 
   <script src="main.js" defer></script>
 </body>
+
 </html>
